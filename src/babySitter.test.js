@@ -13,5 +13,13 @@ describe ("Babysitter Nightly Charge", function() {
   expect(babySitter(2)).toEqual(16);
   });
 
+  it("time is between 5-9pm, pay $12 an hour", function(){
+    expect(babySitter(18)).toEqual(12);
+  });
+
+  it("time is between 9-12pm, pay $8 an hour", function(){
+    expect(babySitter(22)).toEqual(8);
+  });
+
 
 });

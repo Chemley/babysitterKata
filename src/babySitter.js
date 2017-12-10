@@ -8,4 +8,7 @@ export function babySitter(hours) {
     return 12;
   }
 
+  if (hours < 4) {
+    return 16;
+  }
 }
