@@ -1,6 +1,8 @@
 Hello!
 
-My app is built with React and tested using Jest. To get started, cd in the the folder where you've cloned this project.
+My app is built with React and tested using Jest. To get started, cd into the the folder where you've cloned this project.
+
+In the command line,
   - Type npm install.
     - This will set up the Jest test suite.
   - Type npm test.
