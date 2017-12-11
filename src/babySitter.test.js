@@ -56,7 +56,7 @@ describe ("Babysitter Nightly Charge", function() {
   });
 
   it("babysitter nightly total", function() {
-    expect(babySitter()).toEqual(144);
+    expect(babySitter(12)).toEqual(144);
   });
 
 
