@@ -1,18 +1,20 @@
-export function babySitter(hours, cost) {
+export function babySitter(hours) {
+  var startTime = 17;
+  var bedTime = 21;
+  var endTime = 4;
+  var newDay = 23;
+  var totalHoursWorked = 4;
+  var totalCost;
 
-  if (hours >= 17 && hours <= 21) {
+  if (hours > startTime && hours <= bedTime) {
     return 12;
   }
 
-  if (hours > 21 && hours <= 23) {
+  if (hours > bedTime && hours <= newDay) {
     return 8;
   }
 
-  if (hours >= 17 && hours <= 21 && cost === 48) {
-    return cost;
-  }
-
-  if (hours < 4) {
+  if (hours < endTime) {
     return 16;
   }
 

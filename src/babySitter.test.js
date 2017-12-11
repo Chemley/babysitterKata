@@ -17,7 +17,7 @@ describe ("Babysitter Nightly Charge", function() {
     expect(babySitter(18)).toEqual(12);
   });
 
-  it("time is between 9-12pm, pay $8 an hour", function() {
+  it("time is between 9-12am, pay $8 an hour", function() {
     expect(babySitter(22)).toEqual(8);
   });
 
@@ -30,11 +30,15 @@ describe ("Babysitter Nightly Charge", function() {
   });
 
   it("babysitter worked from 5pm - 9pm, total $/hr is 48", function() {
-    expect(babySitter(20)).toEqual(12, 48);
+    expect(babySitter(20)).toEqual(48);
   });
 
-  it("babysitter worked from 9pm - 12pm, total $/hr is 32", function() {
-    expect(babySitter(20)).toEqual(8, 32);
-  });
+  // it("babysitter worked from 9pm - 12am, total $/hr is 32", function() {
+  //   expect(babySitter(21.5)).toEqual(32);
+  // });
+  //
+  // it("babysitter worked from 12am - 4am, total $/hr is 64", function() {
+  //   expect(babySitter(1)).toEqual(64);
+  // });
 
 });
