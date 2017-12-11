@@ -43,17 +43,21 @@ describe ("Babysitter Nightly Charge", function() {
     expect(babySitter(hours, hoursWorked)).toEqual(48);
   });
 
-    it("babysitter worked from 9pm - 12am, total $/hr is 32", function() {
-      var hours = 21.5;
-      var hoursWorked = 4;
-      expect(babySitter(hours, hoursWorked)).toEqual(32);
-    });
-  // it("babysitter worked from 9pm - 12am, total $/hr is 32", function() {
-  //   expect(babySitter(21.5)).toEqual(32);
-  // });
-  //
-  // it("babysitter worked from 12am - 4am, total $/hr is 64", function() {
-  //   expect(babySitter(1)).toEqual(64);
-  // });
+  it("babysitter worked from 9pm - 12am, total $/hr is 32", function() {
+    var hours = 21.5;
+    var hoursWorked = 4;
+    expect(babySitter(hours, hoursWorked)).toEqual(32);
+  });
+
+  it("babysitter worked from midnight - 4am, total $/hr is 64", function() {
+    var hours = 3.5;
+    var hoursWorked = 4;
+    expect(babySitter(hours, hoursWorked)).toEqual(64);
+  });
+
+  it("babysitter nightly total", function() {
+    expect(babySitter()).toEqual(144);
+  });
+
 
 });
