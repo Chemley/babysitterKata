@@ -11,7 +11,6 @@ export function babySitter(hours, hoursWorked) {
   if (hour > bedTime && hour <= newDay && hoursWorked === 4) {
     return 32;
   } else if (hour > bedTime && hour <= newDay) {
-    console.log(hour);
     return 8;
   } else if (hour <= endTime && hoursWorked === 4) {
     return 64;

@@ -1,9 +1,14 @@
-Hello!
+#Hello!#
 
-My app is built using React and tested using Jest. To get started, cd in the the folder where you've cloned this project.
+My app is built with React and tested using Jest. To get started, cd in the the folder where you've cloned this project.
   - Type npm install.
     - This will set up the Jest test suite.
   - Type npm test.
     - This will run the tests that I've created.
+
+You can find all files in the source (src) folder.
+  - babySitter.js => contains the logic for the babysitter calculator.
+  - babySitter.test.js => contains the code for the tests.
+
 
 Happy testing!
