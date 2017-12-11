@@ -1,17 +1,17 @@
 // Time of day (hours) is written in military time.
-// TODO calculate the total based the hours worked per increment.
 
 export function babySitter(hours, hoursWorked) {
   var startTime = 17;
   var bedTime = 21;
   var endTime = 4;
   var newDay = 23;
-  var hour = Math.round(hours);
+  var hour = Math.ceil(hours);
   var nightlyTotal = 0;
 
   if (hour > bedTime && hour <= newDay && hoursWorked === 4) {
     return 32;
   } else if (hour > bedTime && hour <= newDay) {
+    console.log(hour);
     return 8;
   } else if (hour <= endTime && hoursWorked === 4) {
     return 64;

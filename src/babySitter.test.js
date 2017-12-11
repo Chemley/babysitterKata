@@ -30,7 +30,7 @@ describe ("Babysitter Nightly Charge", function() {
   });
 
   it("time is between 9pm - 12am, & half-hour, pay $8 an hour", function() {
-    expect(babySitter(22.5)).toEqual(8);
+    expect(babySitter(22.1)).toEqual(8);
   });
 
   it("time is between midnight - 4am, & half-hour, pay $16 an hour", function() {

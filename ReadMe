@@ -1,0 +1,9 @@
+Hello!
+
+My app is built using React and tested using Jest. To get started, cd in the the folder where you've cloned this project.
+  - Type npm install.
+    - This will set up the Jest test suite
+  - Type npm test.
+    - This will run the tests that I've created.
+
+Happy testing!
