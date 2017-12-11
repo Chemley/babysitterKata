@@ -5,7 +5,6 @@ export function babySitter(hours, hoursWorked) {
   var bedTime = 21;
   var endTime = 4;
   var newDay = 23;
-  // var totalHoursWorked = 4;
   var totalCost;
   var hour = Math.round(hours);
 
@@ -14,8 +13,10 @@ export function babySitter(hours, hoursWorked) {
     return 8;
   } else if (hour < endTime) {
     return 16;
-  } else if (hour > startTime && hour <= bedTime){
+  } else if (hour > startTime && hour <= bedTime && hoursWorked === 4) {
     console.log(hoursWorked);
+    return 48;
+  } else if (hour > startTime && hour <= bedTime) {
     return 12;
   }
 
