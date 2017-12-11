@@ -1,4 +1,4 @@
-#Hello!#
+Hello!
 
 My app is built with React and tested using Jest. To get started, cd in the the folder where you've cloned this project.
   - Type npm install.
