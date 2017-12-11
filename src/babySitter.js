@@ -1,22 +1,34 @@
-export function babySitter(hours) {
+// Time of day (hours) is written in military time.
+
+export function babySitter(hours, hoursWorked) {
   var startTime = 17;
   var bedTime = 21;
   var endTime = 4;
   var newDay = 23;
-  var totalHoursWorked = 4;
+  // var totalHoursWorked = 4;
   var totalCost;
+  var hour = Math.round(hours);
 
-  if (hours > startTime && hours <= bedTime) {
+  if (hour > bedTime && hour <= newDay) {
+    console.log(hour);
+    return 8;
+  } else if (hour < endTime) {
+    return 16;
+  } else if (hour > startTime && hour <= bedTime){
+    console.log(hoursWorked);
     return 12;
   }
 
-  if (hours > bedTime && hours <= newDay) {
-    return 8;
-  }
-
-  if (hours < endTime) {
-    return 16;
-  }
-
+  // if (HoursWorked === 4) {
+  //     if(hours > startTime && hours <= bedTime) {
+  //     console.log(totalHoursWorked);
+  //     return 48;
+  //   }
+  // } else if (totalHoursWorked !== 4) {
+  //     if(hours > startTime && hours <= bedTime) {
+  //     console.log(totalHoursWorked);
+  //     return 12;
+  //   }
+  // }
 
 }
